@@ -12,22 +12,31 @@
 <body>
 
   <main class="main">
+    <h1 class="main__heading--sr">Stats Preview Card</h1>
 
-    KRRRRRRRRRR
-    <picture>
+    <picture class="main__picture">
       <!-- Image source when screen is wider than 375px -->
-      <source media="(min-width: 375px)" srcset="images/image-header-mobile" sizes="">
+      <source media="(min-width: 375px)" srcset="images/image-header-desktop.jpg" sizes="">
       <!-- Default image source for mobile responsive -->
       <img src="images/image-header-mobile.jpg" alt="background image">
     </picture>
-    Get insights that help your business grow.
 
-    Discover the benefits of data analytics and make better decisions regarding revenue, customer
-    experience, and overall efficiency.
+    <article class="main__article">
+      <h2 class="main__heading2"> Get <span class="main__span--highlight">insights</span> that help your business grow.
+      </h2>
 
-    10k+ companies
-    314 templates
-    12m+ queries
+      <p class="main__para"> Discover the benefits of data analytics and make better decisions regarding revenue,
+        customer
+        experience, and overall efficiency.</p>
+
+      <section class="main__stats">
+        <p class="main__para main__para--stats"><span class="main__span--bold"> 10k+ <br></span>
+          COMPANIES</p>
+        <p class="main__para main__para--stats"><span class="main__span--bold">314 <br></span> TEMPLATES</p>
+        <p class="main__para main__para--stats"><span class="main__span--bold">12M+ <br></span>QUERIES</p>
+      </section>
+    </article>
+
   </main>
 </body>
 
