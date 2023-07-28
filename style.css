@@ -27,9 +27,14 @@ html, body {
   height: 100%;
   font-size: 15px;
   line-height: 1.5;
+  background-color: var(--very-dark-blue);
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+.main {
+  background-color: var(--dark-desaturated-blue);
 }
