@@ -32,9 +32,8 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-
 - Mobile-first workflow
 
 ### What I learned
@@ -82,7 +81,7 @@ I learned how to add the purple overlay over the image. Here's how I went about 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [CSS mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) - This helped me better understand how to blend the image colors with that of the overlay
 
 ## Author
 
