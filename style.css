@@ -113,3 +113,53 @@ picture {
 	mix-blend-mode: multiply;
 	opacity: 0.8;
 }
+
+@media screen and (min-width: 60rem) {
+	.main {
+		max-width: 85rem;
+		flex-direction: row-reverse;
+	}
+
+	.main__heading2 {
+		font-size: xx-large;
+	}
+
+	.main__article {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 10rem 1rem 4rem;
+		flex: 1;
+		text-align: left;
+	}
+
+	.main__picture {
+		flex: 1;
+	}
+
+	.main__stats {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 2rem 2rem 0;
+	}
+
+	.main__picture img {
+		border-radius: 0 1rem 1rem 0;
+	}
+
+	.main__heading2 {
+		color: var(--white);
+		font-size: 2rem;
+	}
+
+	.main__para {
+		font-size: large;
+	}
+
+	.main__span--bold {
+		font-size: xx-large;
+	}
+
+	.main__para--stats {
+		font-size: small;
+	}
+}
