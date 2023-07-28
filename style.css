@@ -28,7 +28,6 @@ body {
 	height: 100vh;
 	font-size: 15px;
 	line-height: 1.5;
-	font-family: 'Inter', sans-serif;
 	font-family: 'Lexend Deca', sans-serif;
 	background-color: var(--very-dark-blue);
 	display: flex;
@@ -79,6 +78,7 @@ picture {
 
 .main__span--highlight {
 	color: var(--soft-violet);
+	font-family: 'Inter', sans-serif;
 }
 
 .main__para {
@@ -95,4 +95,21 @@ picture {
 	color: var(--white);
 	font-weight: 700;
 	font-size: large;
+}
+
+/* Create the purple overlay */
+.main__picture {
+	position: relative;
+}
+
+.main__picture ::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--soft-violet);
+	mix-blend-mode: multiply;
+	opacity: 0.8;
 }

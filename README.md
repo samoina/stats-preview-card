@@ -10,6 +10,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+    - [How to add an overlay](#how-to-add-an-overlay)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -37,6 +38,47 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
+
+#### How to add an overlay
+
+I learned how to add the purple overlay over the image. Here's how I went about it:
+
+1. I used the ::before pseudoselector to create an 'extra' layer on top of the existing image.
+2. I positioned the parent container relative to create a new reference position for its children. this way, the children will be placed relative to the parent and NOT the document, thus not affecting other elements.
+3. I then added some style to the pseudoselector with top, left, width and height to cover the image entirely, before adding a background color to it.
+4. I then used the `mix-blend-mode` which determines how the image color blends with the overlay, then set the opacity to determine the transparency.
+
+```html
+<picture class="main__picture">
+	<!-- Image source when screen is wider than 375px -->
+	<source
+		media="(min-width: 375px)"
+		srcset="images/image-header-desktop.jpg"
+		sizes=""
+	/>
+	<!-- Default image source for mobile responsive -->
+	<img src="images/image-header-mobile.jpg" alt="background image" />
+</picture>
+```
+
+```css
+/* Create the purple overlay */
+.main__picture {
+	position: relative;
+}
+
+.main__picture ::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--soft-violet);
+	mix-blend-mode: multiply;
+	opacity: 0.5;
+}
+```
 
 ### Useful resources
 
